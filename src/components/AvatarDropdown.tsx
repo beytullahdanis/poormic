@@ -57,9 +57,9 @@ export default function AvatarDropdown() {
                         </DropdownMenuItem>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem className='cursor-pointer'>
-                        <LogOut className='text-red-500' />
-                        <span className='text-red-500'>Çıkış Yap</span>
+                    <DropdownMenuItem variant='destructive' className='cursor-pointer'>
+                        <LogOut />
+                        <span>Çıkış Yap</span>
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>

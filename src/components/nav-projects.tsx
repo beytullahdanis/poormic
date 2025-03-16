@@ -80,9 +80,9 @@ export function NavProjects({
                     <span>Davet Et</span>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Trash2 className="text-red-500" />
-                    <span className="text-red-500">Kanalı Sil</span>
+                  <DropdownMenuItem variant='destructive' className="cursor-pointer">
+                    <Trash2 />
+                    <span>Kanalı Sil</span>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -134,9 +134,9 @@ export function NavProjects({
                     <span>Davet Et</span>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Trash2 className="text-red-500" />
-                    <span className="text-red-500">Kanalı Sil</span>
+                  <DropdownMenuItem variant='destructive' className="cursor-pointer">
+                    <Trash2 />
+                    <span>Kanalı Sil</span>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
