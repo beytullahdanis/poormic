@@ -36,7 +36,7 @@ export default function CreateChannelButton() {
                 </div>
                 <DialogFooter>
                     <DialogClose asChild>
-                        <Button type="button" className="cursor-pointer" disabled={false}>Oluştur</Button>
+                        <Button variant="secondary" className="cursor-pointer" disabled={false}>Oluştur</Button>
                     </DialogClose>
                 </DialogFooter>
             </DialogContent>

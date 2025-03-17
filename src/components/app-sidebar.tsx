@@ -10,6 +10,7 @@ import {
   Inbox,
   Mic,
   MicVocal,
+  Radio,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -36,23 +37,6 @@ const data = {
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
-  teams: [
-    {
-      name: "poormic",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "poormic|",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
-  ],
   navMain: [
     {
       title: "Anasayfa",
@@ -75,49 +59,49 @@ const data = {
     {
       name: "Algoritma Proje ödevi grubu",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "beytullah",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "Proje IT",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "valorant",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "Matematik proje",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "mezuniyet 2023-2024",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "programlama",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
     {
       name: "kick",
       url: "#",
-      icon: Mic,
+      icon: Radio,
     },
   ],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="offcanvas" variant="inset" {...props}>
+    <Sidebar collapsible="offcanvas" variant="inset" {...props} className="px-1.5">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
