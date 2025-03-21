@@ -3,6 +3,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
 import { Button } from './ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { BadgeCheck, Bell, LogOut, Settings, Sparkles, User, UserRound } from 'lucide-react'
+import Link from 'next/link'
 
 export default function AvatarDropdown() {
     return (
@@ -51,10 +52,12 @@ export default function AvatarDropdown() {
                             <Bell />
                             Bildirimler
                         </DropdownMenuItem>
-                        <DropdownMenuItem className='cursor-pointer'>
-                            <Settings />
-                            Ayarlar
-                        </DropdownMenuItem>
+                        <Link href="/settings" passHref>
+                            <DropdownMenuItem className='cursor-pointer'>
+                                <Settings />
+                                Ayarlar
+                            </DropdownMenuItem>
+                        </Link>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem variant='destructive' className='cursor-pointer'>
