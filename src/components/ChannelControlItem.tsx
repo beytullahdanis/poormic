@@ -8,13 +8,13 @@ const ChannelControlItem = () => {
 
     return (
         <div className='flex items-center gap-5'>
-            <Button variant={micState ? "secondary" : "destructive"} size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full cursor-pointer transition-all transform" onClick={() => setMicState(!micState)}>
+            <Button variant={micState ? "secondary" : "destructive"} size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full transition-all transform" onClick={() => setMicState(!micState)}>
                 {micState ? <Mic className="size-5" /> : <MicOff className="size-5" />}
             </Button>
-            <Button variant="destructive" size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full cursor-pointer">
+            <Button variant="destructive" size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full">
                 <PhoneMissed className="size-5" />
             </Button>
-            <Button variant="secondary" size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full cursor-pointer">
+            <Button variant="secondary" size="icon" className="h-[4.2rem] w-[4.2rem] rounded-full">
                 <Settings className="size-5" />
             </Button>
         </div>

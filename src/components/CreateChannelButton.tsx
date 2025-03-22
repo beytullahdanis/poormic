@@ -17,7 +17,7 @@ export default function CreateChannelButton() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button variant="outline" className="w-full flex justify-start py-4 dark:bg-neutral-900 dark:hover:bg-neutral-800 cursor-pointer">
+                <Button variant="outline" className="w-full flex justify-start py-4 dark:bg-neutral-900 dark:hover:bg-neutral-800">
                     <Plus />
                     <span>Yeni kanal oluştur</span>
                 </Button>
@@ -36,7 +36,7 @@ export default function CreateChannelButton() {
                 </div>
                 <DialogFooter>
                     <DialogClose asChild>
-                        <Button variant="secondary" className="cursor-pointer" disabled={false}>Oluştur</Button>
+                        <Button variant="secondary" disabled={false}>Oluştur</Button>
                     </DialogClose>
                 </DialogFooter>
             </DialogContent>

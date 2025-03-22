@@ -10,7 +10,7 @@ export default function AvatarDropdown() {
         <div className="flex items-center gap-4">
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="relative h-9 w-9 rounded-full cursor-pointer">
+                    <Button variant="ghost" className="relative h-9 w-9 rounded-full">
                         <Avatar className="w-9 h-9">
                             <AvatarImage src="" />
                             <AvatarFallback>BD</AvatarFallback>

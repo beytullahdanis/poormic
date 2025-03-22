@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="secondary" size="lg" className="mt-2 cursor-pointer" >
+            <Button variant="secondary" size="lg" className="mt-2" >
               Yeni Kanal Oluştur
             </Button>
           </DialogTrigger>
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <DialogFooter>
               <DialogClose asChild>
-                <Button variant="secondary" className="cursor-pointer" disabled={false}>Oluştur</Button>
+                <Button variant="secondary" disabled={false}>Oluştur</Button>
               </DialogClose>
             </DialogFooter>
           </DialogContent>
