@@ -56,7 +56,7 @@ export function AppearanceForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                <FormField
+                {/* <FormField
                     control={form.control}
                     name="font"
                     render={({ field }) => (
@@ -84,7 +84,7 @@ export function AppearanceForm() {
                             <FormMessage />
                         </FormItem>
                     )}
-                />
+                /> */}
                 <FormField
                     control={form.control}
                     name="theme"
@@ -105,7 +105,7 @@ export function AppearanceForm() {
                                         <FormControl>
                                             <RadioGroupItem value="light" className="sr-only" />
                                         </FormControl>
-                                        <div className="items-center rounded-md border-2 border-muted p-1 hover:border-accent">
+                                        <div className="items-center rounded-md border-2 border-muted p-1 hover:border-accent hover:bg-accent hover:text-accent-foreground">
                                             <div className="space-y-2 rounded-sm bg-[#ecedef] p-2">
                                                 <div className="space-y-2 rounded-md bg-white p-2 shadow-sm">
                                                     <div className="h-2 w-[80px] rounded-lg bg-[#ecedef]" />
