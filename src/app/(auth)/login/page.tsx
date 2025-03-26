@@ -1,5 +1,10 @@
 import { LoginForm } from "@/components/login-form";
 import { Mic2 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Login - poormic'
+}
 
 export default function Login() {
     return (

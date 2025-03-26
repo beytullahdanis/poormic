@@ -1,5 +1,10 @@
 import ChannelControlItem from "@/components/ChannelControlItem";
 import ChannelMemberItem from "@/components/ChannelMemberItem";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Channel - poormic'
+}
 
 export default async function Page({ params }: {
     params: Promise<{ id: number }>

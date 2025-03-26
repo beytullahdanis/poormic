@@ -1,5 +1,10 @@
 import { SignUpForm } from '@/components/signup-form'
 import { Mic2 } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Sign Up - poormic'
+}
 
 export default function SignUp() {
     return (

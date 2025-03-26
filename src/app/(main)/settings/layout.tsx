@@ -1,5 +1,10 @@
 import { SettingsSidebar } from "@/components/settings-sidebar"
 import { Separator } from "@/components/ui/separator"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: 'Settings - poormic'
+}
 
 export default function SettingsLayout({
     children,

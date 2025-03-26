@@ -1,5 +1,10 @@
 import { ProfileForm } from "@/components/profile-form"
 import { Separator } from "@/components/ui/separator"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: 'Profile Settings - poormic'
+}
 
 export default function SettingsProfilePage() {
     return (

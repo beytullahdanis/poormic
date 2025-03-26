@@ -1,5 +1,10 @@
 import { Separator } from "@/components/ui/separator"
 import { AppearanceForm } from "@/components/appearance-form"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: 'Appearance - poormic'
+}
 
 export default function SettingsAppearancePage() {
     return (
