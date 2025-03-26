@@ -39,18 +39,18 @@ const data = {
   },
   navMain: [
     {
-      title: "Anasayfa",
+      title: "Home",
       url: "#",
       icon: Home,
       isActive: true,
     },
     {
-      title: "Mesajlar",
+      title: "Messages",
       url: "#",
       icon: Inbox,
     },
     {
-      title: "Bildirimler",
+      title: "Notifications",
       url: "#",
       icon: Bell,
     },
@@ -126,7 +126,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarSeparator />
       <SidebarFooter>
         <CreateChannelButton />
-        {/* <NavUser user={data.user} /> */}
       </SidebarFooter>
       {/* <SidebarRail /> */}
     </Sidebar>

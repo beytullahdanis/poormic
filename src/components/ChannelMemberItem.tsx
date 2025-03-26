@@ -63,18 +63,18 @@ const ChannelMemberItem = ({ user }: User) => {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="flex flex-col items-start gap-2.5 pb-2">
-                    <span>Ses Seviyesi</span>
+                    <span>User Volume</span>
                     <Slider defaultValue={[95]} max={100} step={1} />
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="cursor-pointer">
                     <MicOff />
-                    <span>Sustur</span>
+                    <span>Mute</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem variant='destructive' className="cursor-pointer">
                     <Ban />
-                    <span>Kanaldan At</span>
+                    <span>Block</span>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

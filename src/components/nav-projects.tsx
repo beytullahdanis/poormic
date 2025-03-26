@@ -1,11 +1,11 @@
 "use client"
 
 import {
+  LogOut,
   MailPlus,
   MoreHorizontal,
   Pin,
-  Plus,
-  Settings2,
+  Settings,
   Trash2,
   type LucideIcon,
 } from "lucide-react"
@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 import {
   SidebarGroup,
-  SidebarGroupAction,
   SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuAction,
@@ -42,7 +41,7 @@ export function NavProjects({
   return (
     <div>
       <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-        <SidebarGroupLabel>Kanalların</SidebarGroupLabel>
+        <SidebarGroupLabel>Your Channels</SidebarGroupLabel>
         {/* <SidebarGroupAction title="Kanal Sayısı">
         <span className="text-xs">9</span> <span className="sr-only">Kanal Sayısı</span>
       </SidebarGroupAction> */}
@@ -59,7 +58,7 @@ export function NavProjects({
                 <DropdownMenuTrigger asChild>
                   <SidebarMenuAction showOnHover>
                     <MoreHorizontal />
-                    <span className="sr-only">Daha fazla</span>
+                    <span className="sr-only">Show more</span>
                   </SidebarMenuAction>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
@@ -68,21 +67,21 @@ export function NavProjects({
                   align={isMobile ? "end" : "start"}
                 >
                   <DropdownMenuItem className="cursor-pointer">
-                    <Settings2 className="text-muted-foreground" />
-                    <span>Kanal Ayarları</span>
+                    <Settings className="text-muted-foreground" />
+                    <span>Settings</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
                     <Pin className="text-muted-foreground" />
-                    <span>Sabitle</span>
+                    <span>Pin</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
                     <MailPlus className="text-muted-foreground" />
-                    <span>Davet Et</span>
+                    <span>Invite</span>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem variant='destructive' className="cursor-pointer">
                     <Trash2 />
-                    <span>Kanalı Sil</span>
+                    <span>Delete</span>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -91,7 +90,7 @@ export function NavProjects({
           <SidebarMenuItem>
             <SidebarMenuButton className="text-sidebar-foreground/70 cursor-pointer">
               <MoreHorizontal className="text-sidebar-foreground/70" />
-              <span>Daha fazla göster</span>
+              <span>Show more</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -99,7 +98,7 @@ export function NavProjects({
         {/* Kullanıcının katıldığı kanallar */}
       </SidebarGroup>
       <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-        <SidebarGroupLabel>Katıldığın Kanallar</SidebarGroupLabel>
+        <SidebarGroupLabel>Joined Channels</SidebarGroupLabel>
         <SidebarMenu>
           {projects.map((item) => (
             <SidebarMenuItem key={item.name}>
@@ -113,7 +112,7 @@ export function NavProjects({
                 <DropdownMenuTrigger asChild>
                   <SidebarMenuAction showOnHover>
                     <MoreHorizontal />
-                    <span className="sr-only">Daha fazla</span>
+                    <span className="sr-only">Show more</span>
                   </SidebarMenuAction>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
@@ -122,21 +121,21 @@ export function NavProjects({
                   align={isMobile ? "end" : "start"}
                 >
                   <DropdownMenuItem className="cursor-pointer">
-                    <Settings2 className="text-muted-foreground" />
-                    <span>Kanal Ayarları</span>
+                    <Settings className="text-muted-foreground" />
+                    <span>Settings</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
                     <Pin className="text-muted-foreground" />
-                    <span>Sabitle</span>
+                    <span>Pin</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer">
                     <MailPlus className="text-muted-foreground" />
-                    <span>Davet Et</span>
+                    <span>Invite</span>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem variant='destructive' className="cursor-pointer">
-                    <Trash2 />
-                    <span>Kanalı Sil</span>
+                    <LogOut />
+                    <span>Leave</span>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -145,7 +144,7 @@ export function NavProjects({
           <SidebarMenuItem>
             <SidebarMenuButton className="text-sidebar-foreground/70 cursor-pointer">
               <MoreHorizontal className="text-sidebar-foreground/70" />
-              <span>Daha fazla göster</span>
+              <span>Show more</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

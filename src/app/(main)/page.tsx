@@ -10,31 +10,31 @@ export default function Home() {
         <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/10">
           <PlusCircle className="h-12 w-12 text-primary" />
         </div>
-        <h1 className="text-3xl font-bold tracking-tight">Hemen yeni bir kanal oluştur</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Create a channel to get started</h1>
         <p className="max-w-md text-muted-foreground">
-          Kanallar sayesinde arkadaşlarınla ve takım üyeleriyle kolayca iletişim kurabilirsin.
+          You can easily communicate with your friends and team members by creating a channel.
         </p>
         <Dialog>
           <DialogTrigger asChild>
             <Button variant="secondary" size="lg" className="mt-2" >
-              Yeni Kanal Oluştur
+              Create New Channel
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
-              <DialogTitle>Kanal Oluştur</DialogTitle>
+              <DialogTitle>Create New Channel</DialogTitle>
               <DialogDescription>
-                Oluşturmak istediğiniz kanala bir isim bulun.
+                Find a name for the channel you want to create.
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-2">
               <div className="grid items-center gap-4">
-                <Input id="name" type="text" placeholder="Kanal Adı" />
+                <Input id="name" type="text" placeholder="Channel Name" />
               </div>
             </div>
             <DialogFooter>
               <DialogClose asChild>
-                <Button variant="secondary" disabled={false}>Oluştur</Button>
+                <Button variant="secondary" disabled={false}>Create Channel</Button>
               </DialogClose>
             </DialogFooter>
           </DialogContent>

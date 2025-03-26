@@ -39,30 +39,30 @@ export default function AvatarDropdown() {
                     <DropdownMenuGroup>
                         <DropdownMenuItem className='cursor-pointer'>
                             <Sparkles />
-                            Pro'ya Yükselt
+                            Upgrade to Pro
                         </DropdownMenuItem>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuGroup>
                         <DropdownMenuItem className='cursor-pointer'>
                             <UserRound />
-                            Hesabın
+                            Account
                         </DropdownMenuItem>
                         <DropdownMenuItem className='cursor-pointer'>
                             <Bell />
-                            Bildirimler
+                            Notifications
                         </DropdownMenuItem>
                         <Link href="/settings" passHref>
                             <DropdownMenuItem className='cursor-pointer'>
                                 <Settings />
-                                Ayarlar
+                                Settings
                             </DropdownMenuItem>
                         </Link>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem variant='destructive' className='cursor-pointer'>
                         <LogOut />
-                        <span>Çıkış Yap</span>
+                        <span>Log out</span>
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
