@@ -101,19 +101,19 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="offcanvas" variant="inset" {...props} className="px-1.5">
+    <Sidebar collapsible="offcanvas" variant="inset" {...props} className="px-1.5 select-none">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton className="w-full px-1 py-5" asChild>
-              <Link href="/">
+            <SidebarMenuButton className="w-full px-1 py-5 pointer-events-none" asChild>
+              <div>
                 <div className="flex aspect-square size-8 items-center justify-center rounded-md bg-sidebar-primary text-sidebar-primary-foreground">
                   <MicVocal className="size-4.5" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold text-[17.5px]">poormic</span>
                 </div>
-              </Link>
+              </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
