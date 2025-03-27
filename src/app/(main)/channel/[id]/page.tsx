@@ -1,13 +1,19 @@
 import ChannelControlItem from "@/components/ChannelControlItem";
 import ChannelMemberItem from "@/components/ChannelMemberItem";
-import { Metadata } from "next";
+import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-    title: 'Channel - poormic'
+export async function generateMetadata(
+    { params }: { params: Promise<{ id: string }> },
+): Promise<Metadata> {
+    const { id } = await params
+    const product = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`).then((res) => res.json())
+    return {
+        title: `${product.title} - poormic`,
+    }
 }
 
-export default async function Page({ params }: {
-    params: Promise<{ id: number }>
+export default async function ChannelPage({ params }: {
+    params: { id: string }
 }) {
     const { id } = await params
 
