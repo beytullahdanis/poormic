@@ -24,7 +24,7 @@ export default function MainLayout({
     children: React.ReactNode
 }) {
     const pathname = usePathname();
-    const isChannelPage = pathname.startsWith("/channel/");
+    const isChannelPage = pathname.startsWith("/channel/") || pathname.startsWith("/message");
 
     return (
         <SidebarProvider className={isChannelPage ? "max-h-screen" : "max-h-full"}>
